@@ -303,6 +303,18 @@ body {
   -o-transition: background-color, 0.3s;
   transition: background-color, 0.3s;
 }
+.content .contact .error-messages {
+  background: #bf8484;
+  font-weight: bold;
+  margin-left: 50px;
+  padding-left: 5px;
+}
+@media (max-width:575px){
+  .content .contact .error-messages {
+    margin-left:0px;
+    margin-top:10px;
+  }
+}
 .foot {
   width: 100%;
   padding: 0px 0px 0px 15px;

@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
           icon: 'success',
           confirmButtonText: 'Aceptar'
         });
+        document.getElementById("error-messages").innerHTML = '';
+
+      }else{
+        document.getElementById("error-messages").innerHTML = data.message;
       }
     });
   });

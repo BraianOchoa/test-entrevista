@@ -18,6 +18,8 @@ class Frontend extends CI_Controller {
 
     public function save()
     {
+        $this->set_messages_validation();
+        
         $this->form_validation->set_rules('c_fullname','Nombre y Apellido','required');
         $this->form_validation->set_rules('c_email','Correo Electrónico','required|valid_email');
         $this->form_validation->set_rules('c_telephone','Celular','required|numeric');
@@ -59,5 +61,11 @@ class Frontend extends CI_Controller {
                 'message' => 'Hubo un problema al guardar.'
             ]));
         }
+    }
+
+    private function set_messages_validation(){
+        $this->form_validation->set_message('required', 'El campo %s es obligatorio.');
+        $this->form_validation->set_message('valid_email', 'El campo %s debe ser un correo electronico.');
+        $this->form_validation->set_message('numeric', 'El campo %s debe ser un numero.');
     }
 }

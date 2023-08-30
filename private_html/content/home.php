@@ -36,6 +36,7 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-7 col-md-10 col-12 order-xl-2 order-lg-2 order-1">
+                        <div id="error-messages" class="error-messages"></div>
                         <div class="form">
                             <h3>Consultas Online</h3>
                             <p>Envíe su consulta y un asesor se pondrá en contacto con usted.</p>
